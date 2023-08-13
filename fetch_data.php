@@ -40,7 +40,8 @@ while($row = mysqli_fetch_assoc($run_query))
     $subarray[] = $row['lastname'];
     $subarray[] = $row['firstname'];
     $subarray[] = $row['email'];
-    $subarray[] = $row['type'];
+    $subarray[] = $row['program'];
+    $subarray[] = $row['year'];
 
     $dt1 = new DateTime($row['timeIn']);
     $time1 = $dt1->format('h:i A');
@@ -49,15 +50,15 @@ while($row = mysqli_fetch_assoc($run_query))
 
     if($row['timeIn'] != null && $row['timeOut'])
     {
-        $subarray[] = '<a class="btn btn-sm btn-success">'.$time1.'</a> <a class="btn btn-sm btn-success">'.$time2.'</a>';
+        $subarray[] = '<a href="javascript:void(0);" data-id='.$row['id'].' class="btn btn-sm btn-success checkInBtn">'.$time1.'</a> <a href="javascript:void(0);" data-id='.$row['id'].' class="btn btn-sm btn-success checkOutBtn">'.$time2.'</a>';
     }
     else if($row['timeIn'] != null)
     {
-        $subarray[] = '<a class="btn btn-sm btn-success">'.$time1.'</a> <a href="javascript:void(0);" data-id="'.$row['id'].'" class="btn btn-sm btn-warning checkOutBtn">Check Out</a>';
+        $subarray[] = '<a href="javascript:void(0);" data-id='.$row['id'].' class="btn btn-sm btn-success checkInBtn">'.$time1.'</a> <a href="javascript:void(0);" data-id='.$row['id'].' class="btn btn-sm btn-warning checkOutBtn">Check Out</a>';
     }
     else
     {
-        $subarray[] = '<a href="javascript:void(0);" data-id='.$row['id'].' class="btn btn-sm btn-warning checkInBtn">Check In</a> <a class="btn btn-sm btn-secondary">Check Out</a>';
+        $subarray[] = '<a href="javascript:void(0);" data-id='.$row['id'].' class="btn btn-sm btn-warning checkInBtn">Check In</a> <a class="btn btn-sm btn-secondary checkOutBtn">Check Out</a>';
     }
     
     $data[] = $subarray;

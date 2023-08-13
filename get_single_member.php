@@ -1,4 +1,4 @@
-<?php include('connection.php')
+<?php include('connection.php');
 
 $id = $_POST['id'];
 $sql = "SELECT * FROM members WHERE id='$id'";

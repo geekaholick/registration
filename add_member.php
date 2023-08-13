@@ -1,15 +1,20 @@
-<?php include('conenction.php')
+<?php 
 
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$type = $_POST['type'];
+include('connection.php');
 
-$sql = "INSERT INTO `member`(`firstname`,`lastname`,`type`) VALUES('$firstname', '$lastname', '$type')";
+$firstname = $_POST['firstName'];
+$lastname = $_POST['lastName'];
+$email = $_POST['emailAdd'];
+$program = $_POST['program'];
+$year = $_POST['yearLvl'];
+
+$sql = "INSERT INTO `members`(`firstname`,`lastname`,`email`,`program`,`year`) VALUES('$firstname', '$lastname', '$email','$program','$year')";
 $query = mysqli_query($con, $sql);
 if($query == true) 
 {
     $data = array(
         'status' => 'success',
+        'message' => 'Member added successfully',
     );
     echo json_encode($data);
 }
@@ -17,6 +22,9 @@ else
 {
     $data = array(
         'status' => 'failed',
+        'message' => 'Error adding member',
     );
     echo json_encode($data);
 }
+
+?>
