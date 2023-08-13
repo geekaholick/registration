@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1 class="text-center" style="margin-top:2%;">USC Department of Computer, Information Sciences, and Mathematics</h1>
-    <h1 class="text-center">DCISM Orientation '23-'24</h1>
+    <h1 class="text-center">DCISM Orientation A.Y. '23-'24</h1>
     <div class="container-fluid">
         <div class="row">
             <div class="container">
@@ -53,7 +53,7 @@
 
 
     <!-- Model for Check Out -->
-    <div id="verify2Modal" style="display:none; margin-top:-10%;">
+    <div id="verify2Modal" style="display:none; position:absolute; top:25%; left:40%;">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -63,7 +63,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Do you want to redo the status of Check Out?
+                    Do you want to reset the Check Out status?
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="yesBtn2" class="btn btn-primary">Yes</button>
@@ -74,7 +74,7 @@
     </div>
 
     <!-- Model for Check In -->
-    <div id="verifyModal" style="display:none; margin-top:-10%;">
+    <div id="verifyModal" style="display:none; position:absolute; top:25%; left:40%;">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -84,7 +84,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Do you want to redo the status of Check In?
+                    Do you want to reset the Check In status?
                 </div>
                 <div class="modal-footer">
                 <button type="button" id="yesBtn" class="btn btn-primary">Yes</button>
