@@ -163,7 +163,7 @@
 
     <script type="text/javascript">
         $(document).on('click', '.checkInBtn', function(event){
-            console.log("WENT IN HERE")
+            //console.log("WENT IN HERE")
             var id = $(this).data('id');
             $.ajax({
                 url: "checkin.php",

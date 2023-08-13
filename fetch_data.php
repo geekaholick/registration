@@ -14,7 +14,7 @@ if(isset($_POST['search']['value']))
 if(isset($_POST['order']))
 {
     $column = $_POST['order'][0]['column'];
-    $order = $_POST[order][0]['dir'];
+    $order = $_POST['order'][0]['dir'];
     $sql .= " ORDER BY '".$column."' ".$order;
 }
 else 
