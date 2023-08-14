@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 14, 2023 at 01:28 PM
+-- Generation Time: Aug 14, 2023 at 05:58 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -11,9 +11,14 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
 CREATE DATABASE uscdcism;
 USE uscdcism;
-
 -- --------------------------------------------------------
 
 --
@@ -209,7 +214,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (171, 'ERIK MIGUEL', 'CELDRAN', '20103749@usc.edu.ph', 'BS CS', 4, NULL, NULL),
 (172, 'ALDEN JON', 'CELIS', '23102760@usc.edu.ph', 'BS CS', 1, NULL, NULL),
 (173, 'JADEN', 'CENIZA', '22102267@usc.edu.ph', 'BS IT', 2, NULL, NULL),
-(174, 'JOSE ANGELO', 'CENTINO', '7403787@usc.edu.ph', 'BS IS', 1, NULL, NULL),
+(174, 'JOSE ANGELO', 'CENTINO', '07403787@usc.edu.ph', 'BS IS', 1, NULL, NULL),
 (175, 'VINCEADE', 'CENTINO', '21104450@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (176, 'KEITH ABRAHAM', 'CEPEDA', '17102620@usc.edu.ph', 'BS IT', 4, NULL, NULL),
 (177, 'LANCE GEO', 'CERENIO', '20010110@usc.edu.ph', 'BS CS', 1, NULL, NULL),
@@ -233,7 +238,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (195, 'EZEKIEL ANGELO', 'COLON', '21800539@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (196, 'KYLLE JOSHUA', 'COMBISTA', '22105282@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (197, 'CHAIM JOSEPH', 'CORDOVA', '19102583@usc.edu.ph', 'BS CS', 2, NULL, NULL),
-(198, 'NATHANIEL ANDRE', 'CORNELIO', '7504078@usc.edu.ph', 'BS IT', 1, NULL, NULL),
+(198, 'NATHANIEL ANDRE', 'CORNELIO', '07504078@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (199, 'EDUARDO MIGUEL', 'CORTES', '20101102@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (200, 'JULZ KAUPPER', 'CORTES', '22102606@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (201, 'JOSEPH DAVE', 'CORTEZ', '23000012@usc.edu.ph', 'BS IT', 1, NULL, NULL),
@@ -275,7 +280,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (237, 'JESKHA SAMANTHA', 'DERAMA', '21101228@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (238, 'ANDREW', 'DERECHO', '22103869@usc.edu.ph', 'BS IS', 1, NULL, NULL),
 (239, 'MATTHEW DAVE', 'DESABELLE', '17100772@usc.edu.ph', 'BS IT', 3, NULL, NULL),
-(240, 'JAKE HARVEY', 'DESPABELADERO', '7500972@usc.edu.ph', 'BS CS', 2, NULL, NULL),
+(240, 'JAKE HARVEY', 'DESPABELADERO', '07500972@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (241, 'JUNRY CARL', 'DETABLAN', '19103868@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (242, 'PAUL FRANCE', 'DETABLAN', '23100209@usc.edu.ph', 'BS CS', 1, NULL, NULL),
 (243, 'CLARENCE', 'DIANGCO', '23104163@usc.edu.ph', 'BS IT', 1, NULL, NULL),
@@ -402,7 +407,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (364, 'JEDD CHRISTIAN', 'JUAB', '22102538@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (365, 'MARK ALLEN', 'JUGALBOT', '19104099@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (366, 'JEREMIAH JACOB ANTHONY', 'JUINIO', '18103280@usc.edu.ph', 'BS IT', 3, NULL, NULL),
-(367, 'JOSHUA JACQUES ANTHONY', 'JUINIO', '7200160@usc.edu.ph', 'BS CS', 2, NULL, NULL),
+(367, 'JOSHUA JACQUES ANTHONY', 'JUINIO', '07200160@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (368, 'CURTNEY SEALTIEL', 'JUMA-ANG', '20103408@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (369, 'JAMES DARYLLSON', 'JUMAO-AS', '22104323@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (370, 'JIWOO', 'JUNG', '22100555@usc.edu.ph', 'BS CS', 2, NULL, NULL),
@@ -491,7 +496,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (453, 'REIGINA YSHANNI', 'MASCARIÑAS', '19100393@usc.edu.ph', 'BS CS', 3, NULL, NULL),
 (454, 'DEAN JESUS', 'MATA', '11700035@usc.edu.ph', 'BS IS', 1, NULL, NULL),
 (455, 'RAPHAEL', 'MATRES', '22100331@usc.edu.ph', 'BS CS', 2, NULL, NULL),
-(456, 'KIM ANDRE', 'MAURING', '7403110@usc.edu.ph', 'BS CS', 1, NULL, NULL),
+(456, 'KIM ANDRE', 'MAURING', '07403110@usc.edu.ph', 'BS CS', 1, NULL, NULL),
 (457, 'JOHN MATTHEW', 'MAYOL', '23100839@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (458, 'KATHEA MARI', 'MAYOL', '19103523@usc.edu.ph', 'BS IT', 3, NULL, NULL),
 (459, 'SAINT YVES', 'MAYOL', '23103991@usc.edu.ph', 'BS IT', 1, NULL, NULL),
@@ -515,7 +520,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (477, 'JUSTIN ALAIN', 'MONREAL', '7303357@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (478, 'DAN LIUS', 'MONSALES', '22102950@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (479, 'LIV JEWEL', 'MONSALUD', '23100807@usc.edu.ph', 'BS CS', 1, NULL, NULL),
-(480, 'RITZ JANN', 'MONTALBAN', '7500881@usc.edu.ph', 'BS IT', 1, NULL, NULL),
+(480, 'RITZ JANN', 'MONTALBAN', '07500881@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (481, 'SIMONE MIKAELA', 'MONTAÑEZ', '22103438@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (482, 'LYNT', 'MONTE DE RAMOS', '20101568@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (483, 'AL WINMON BENEDICT', 'MONTEBON', '23102782@usc.edu.ph', 'BS CS', 1, NULL, NULL),
@@ -591,7 +596,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (553, 'JON FRANCIS', 'PASANA', '19100980@usc.edu.ph', 'BS CS', 4, NULL, NULL),
 (554, 'JERICHO', 'PASCO', '17101082@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (555, 'ALNIÑO MANWIL', 'PASTORIZA', '23101097@usc.edu.ph', 'BS CS', 1, NULL, NULL),
-(556, 'RAY EMANUEL', 'PATALINGHUG', '7200335@usc.edu.ph', 'BS IT', 2, NULL, NULL),
+(556, 'RAY EMANUEL', 'PATALINGHUG', '07200335@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (557, 'EDUARDO', 'PATALINJUG', '22104362@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (558, 'JEFF RYAN', 'PATERES', '14105230@usc.edu.ph', 'BS ICT', 4, NULL, NULL),
 (559, 'NIKOLAI TRISTAN', 'PAZON', '21102134@usc.edu.ph', 'BS CS', 1, NULL, NULL),
@@ -698,7 +703,7 @@ INSERT INTO `members` (`id`, `firstname`, `lastname`, `email`, `program`, `year`
 (659, 'MARK KENNETH', 'SARCENO', '23104223@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (660, 'KEITH NEERON', 'SARMIENTO', '23102950@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (661, 'DANIEL KRISTIAN', 'SASAN', '23101659@usc.edu.ph', 'BS IT', 1, NULL, NULL),
-(662, 'JUSTIN GABRIEL', 'SAUSA', '6631305@usc.edu.ph', 'BS IT', 2, NULL, NULL),
+(662, 'JUSTIN GABRIEL', 'SAUSA', '06631305@usc.edu.ph', 'BS IT', 2, NULL, NULL),
 (663, 'BEN SIMON', 'SAYSON', '20100790@usc.edu.ph', 'BS IT', 1, NULL, NULL),
 (664, 'JONAZ JUAN', 'SAYSON', '22101281@usc.edu.ph', 'BS CS', 2, NULL, NULL),
 (665, 'JARED', 'SCHULZ', '22100105@usc.edu.ph', 'BS CS', 2, NULL, NULL),
